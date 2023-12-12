@@ -1,0 +1,448 @@
+input:focus {
+  outline: none;
+  border: #f3f3f3;
+  box-shadow: #f3f3f3;
+}
+
+.line-clamp-1,
+.line-clamp-2,
+.line-clamp-3 {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  -webkit-line-clamp: 3;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.calories-tool .calories-banner {
+  position: relative;
+  margin-top: 3rem;
+}
+.calories-tool .calories-banner img {
+  width: 100%;
+}
+.calories-tool .calories-banner h1 {
+  font-size: 25px;
+  font-weight: 700;
+  background: rgba(255, 180, 0, 0.3137254902);
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+  transform: translateY(-50%);
+}
+.calories-tool .calories-desc {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.calories-tool .calories-desc strong {
+  color: #e6b645;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  display: block;
+}
+.calories-tool .calories-input-info .personal-info h2 {
+  text-transform: uppercase;
+  color: #e6b645;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+.calories-tool .calories-input-info .personal-info small {
+  font-size: 14px;
+  color: #e6b645;
+  text-align: center;
+  display: block;
+}
+.calories-tool .calories-input-info .personal-info p {
+  font-size: 16px;
+  text-align: center;
+}
+.calories-tool .calories-input-info .personal-info label.title {
+  font-weight: 700;
+  color: #e6b645;
+  display: block;
+  font-size: 18px;
+  margin: 1.5rem 0 0.5rem 0;
+}
+.calories-tool .calories-input-info .personal-info label.title:after {
+  content: ":";
+  margin-left: 5px;
+}
+.calories-tool .calories-input-info .personal-info .btn-group .btn {
+  border-color: #e6b645;
+  color: #e6b645;
+  font-weight: 600;
+}
+.calories-tool .calories-input-info .personal-info .btn-group input:checked + .btn {
+  background-color: #e6b645;
+  color: #fff;
+}
+.calories-tool .calories-input-info .personal-info .form-control {
+  border-color: #e6b645;
+  font-weight: 600;
+  outline: none;
+  box-shadow: none;
+}
+.calories-tool .calories-input-info .personal-info .form-control::-moz-placeholder {
+  color: #c7c7c7;
+}
+.calories-tool .calories-input-info .personal-info .form-control::placeholder {
+  color: #c7c7c7;
+}
+.calories-tool .calories-input-info .active-info .button {
+  width: 150px;
+  background-color: #e6b645;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.calories-tool .calories-input-info .active-info .top-row,
+.calories-tool .calories-input-info .active-info .content-row {
+  border: 1px solid #e6b645;
+  border-radius: 0.5rem;
+  background: rgba(230, 182, 69, 0.3137254902);
+  padding: 0.5rem;
+  font-weight: 700;
+  color: #e6b645;
+  margin-bottom: 0.5rem;
+}
+.calories-tool .calories-input-info .active-info .content-row {
+  background: none;
+  font-weight: 500;
+}
+.calories-tool .calories-index .desc {
+  text-align: center;
+  margin-top: 3rem;
+}
+.calories-tool .calories-index .desc strong {
+  font-size: 25px;
+  color: #e6b645;
+}
+.calories-tool .calories-index .index {
+  text-align: center;
+}
+.calories-tool .calories-index .index strong {
+  font-size: 22px;
+  color: #e6b645;
+  display: block;
+}
+.calories-tool .calories-index .index label {
+  color: #ff0000;
+  font-weight: 600;
+  font-size: 75px;
+  display: block;
+}
+.calories-tool .calories-index .index span {
+  font-size: 20px;
+  color: #c7c7c7;
+  display: block;
+}
+.calories-tool .calories-index .result span {
+  display: block;
+  margin: auto;
+  padding: 0 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  background: #e6b645;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.calories-tool .calories-index .result span strong {
+  color: #ff0000;
+  font-size: 60px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+.calories-tool .calories-summary {
+  text-align: center;
+}
+.calories-tool .calories-summary h4 {
+  background-color: rgba(230, 182, 69, 0.3137254902);
+  color: #e6b645;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+.calories-tool .calories-summary .border-box {
+  border: 1px solid #e6b645;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.calories-tool .calories-summary .border-box .content-box-left {
+  border-right: 1px solid #e6b645;
+  min-height: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.calories-tool .calories-summary .border-box .content-box-right {
+  min-height: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.calories-tool .calories-summary .border-box strong {
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+}
+.calories-tool .calories-summary .border-box span {
+  display: block;
+  color: #c7c7c7;
+}
+.calories-tool .calories-summary .border-box label {
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  color: #ff0000;
+}
+.calories-tool .calories-note {
+  text-align: center;
+}
+.calories-tool .calories-note strong {
+  color: #e6b645;
+  font-weight: 600;
+}
+
+.service ul a {
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+}
+.service ul a li {
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.service ul a li:hover {
+  background-color: #c7c7c7;
+}
+
+.banner-fitness {
+  margin-top: 1rem;
+  background-color: #37B387;
+}
+.banner-fitness .desc-banner-fitness {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #fff;
+}
+.banner-fitness .desc-banner-fitness h2 {
+  margin-bottom: 1rem;
+}
+.banner-fitness .desc-banner-fitness p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.banner-fitness .desc-banner-fitness a {
+  text-decoration: none;
+  color: #37B387;
+  padding: 10px 32px;
+  background-color: #fff;
+  border-radius: 6px 8px;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 0px 8px 40px 0 rgba(0, 0, 0, 0.37);
+}
+.banner-fitness .desc-banner-fitness a:hover {
+  box-shadow: 0px 8px 40px 0 rgba(0, 0, 0, 0.17);
+}
+.banner-fitness .img-banner-fitness {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.banner-fitness .img-banner-fitness img {
+  width: 100%;
+}
+
+.benefit {
+  padding: 2rem 0;
+}
+.benefit h2 {
+  margin-left: 1rem;
+  border-left: 8px solid #37B387;
+  border-radius: 3px 0 3px 0;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+#fitness {
+  padding: 1rem;
+  background-color: #fafbfc;
+}
+#fitness h2 {
+  border-left: 8px solid #37B387;
+  border-radius: 3px 0 3px 0;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+#fitness .row {
+  text-align: center;
+  margin: 2rem 0;
+}
+#fitness .row .desc-fitness {
+  margin: 1rem 0 0 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+#fitness .row ul {
+  display: flex;
+  list-style: none;
+  margin: 0 4rem;
+}
+#fitness .row ul .left {
+  float: left;
+  margin-right: 5rem;
+}
+#fitness .row ul .left p i {
+  margin-right: 8px;
+  color: #1e90ff;
+}
+#fitness .row ul .right {
+  float: right;
+  margin-left: 5rem;
+}
+#fitness .row ul .right p i {
+  margin-right: 8px;
+  color: #1e90ff;
+}
+#fitness .see-more {
+  text-align: center;
+}
+#fitness .see-more p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #37B387;
+}
+#fitness .see-more p i {
+  margin-right: 8px;
+}
+
+.list-product {
+  padding: 1rem;
+}
+.list-product h2 {
+  border-left: 8px solid #37B387;
+  border-radius: 3px 0 3px 0;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+.list-product .list-product-fitness {
+  margin-top: 1rem;
+}
+.list-product .list-product-fitness .card {
+  text-align: center;
+  padding: 1rem 0;
+}
+.list-product .list-product-fitness .card .info-product {
+  padding: 1rem;
+  text-decoration: none;
+}
+.list-product .list-product-fitness .card .info-product .img-product img {
+  width: 100%;
+}
+.list-product .list-product-fitness .card .info-product span {
+  text-decoration: none;
+  color: #000;
+  height: 80px;
+  line-height: 30px;
+  margin: 0.5rem 0;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 3px 4px 7px rgba(113, 110, 101, 0.8);
+}
+.list-product .list-product-fitness .card .btn-buy {
+  display: flex;
+  flex-direction: column;
+  margin: 4px 8px;
+}
+.list-product .list-product-fitness .card .btn-buy .btn-info-product {
+  border: 1px solid #38b349;
+  color: #38b349;
+  margin-bottom: 0.5rem;
+}
+.list-product .list-product-fitness .card .btn-buy .btn-info-product i {
+  margin-right: 6px;
+}
+.list-product .list-product-fitness .card .btn-buy .btn-info-product:hover {
+  color: #fff;
+  background-color: #38b349;
+}
+
+.footer {
+  background-color: #37B387;
+}
+.footer h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+.footer h3 i {
+  margin-right: 8px;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul li p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+.footer ul li p i {
+  margin-right: 8px;
+}
+.footer .map {
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+.footer .contact {
+  padding-top: 80px;
+}
+.footer .policy {
+  padding-top: 80px;
+}
+.footer .copy-right {
+  text-align: center;
+  padding-bottom: 4px;
+}
+.footer .copy-right h3 {
+  font-size: 16px;
+  font-weight: 400;
+}/*# sourceMappingURL=css.css.map */

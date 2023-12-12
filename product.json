@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "name": "Ngũ cốc Granola Chocolate",
+        "price":156,
+        "image":"assets/img/san-pham/Ngũ cốc Granola Chocolate.png"    
+    },
+    {
+        "id":2,
+        "name": "Ngũ cốc Granola Dâu",
+        "price":199,
+        "image":"assets/img/san-pham/Ngũ cốc Granola Dâu.png"    
+    },
+    {
+        "id":3,
+        "name": "Ngũ cốc nướng phồng granola vị Apple",
+        "price":156,
+        "image":"assets/img/san-pham/Ngũ cốc nướng phồng granola vị Apple.png"    
+    },
+    {
+        "id":4,
+        "name": "Ngũ Cốc Granola Vị Bánh Quy",
+        "price":199,
+        "image":"assets/img/san-pham/Ngũ Cốc Granola Vị Bánh Quy.png"    
+    },
+    {
+        "id":5,
+        "name": "Ngũ cốc nướng phồng granola vị Chocolate",
+        "price":156,
+        "image":"assets/img/san-pham/Ngũ cốc nướng phồng granola vị Chocolate.png"    
+    }
+]
