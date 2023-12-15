@@ -364,11 +364,22 @@ const handleCheckBMI = (bmi) => {
   }
 };
 
-$(".btn").click(function () {
+$(".btn-checked").click(function () {
   $(".bmi-review-project").html("");
   handleBMI();
-  clearCode();
 });
+// reset //
+let resetBMI = document.querySelector('.btn-reset');
+resetBMI.addEventListener("click", function(){
+  handleBMI();
+clearCode();
+
+$("#number-bmi-result").html("0");
+$(".number-bmi").css("background-color", "#cefad3");
+$("#review-bmi-result").html("Hãy nhập thông tin phía trên để tính BMI");
+
+});
+
 
 const clearCode = () => {
   $(".input-height").val("");
@@ -674,3 +685,40 @@ const initApp = () => {
     });
 };
 initApp();
+// scroll bar //
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+    console.log("true");
+  } else {
+    scrollToTopBtn.style.display = "none";
+    console.log("flase");
+  }
+});
+
+scrollToTopBtn.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
+const scrollNavRight = document.querySelector(".nav-right");
+var scrollHeight = document.documentElement.scrollHeight;
+var windowHeight = window.innerHeight;
+var scrollLengthToBottom = scrollHeight - windowHeight;
+window.addEventListener("scroll", () => {
+  if (
+    document.body.scrollTop > 20 ||
+    (document.documentElement.scrollTop > 20 &&
+      document.documentElement.scrollTop < scrollLengthToBottom - 500)
+  ) {
+    scrollNavRight.style.position = "fixed";
+    scrollNavRight.style.top = "170px";
+    scrollNavRight.style.right = "54px";
+  } else if (scrollLengthToBottom - document.documentElement.scrollTop <= 500) {
+    scrollNavRight.style.position = "relative";
+    scrollNavRight.style.top = "0px";
+    scrollNavRight.style.right = "0px";
+  }
+});

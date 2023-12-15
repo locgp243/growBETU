@@ -565,6 +565,9 @@ header {
 
   }
 }
+.bmi-review-project{
+  padding-bottom: 80px;
+}
 // index //
 .gio-hang{
   .cart-tab{
@@ -577,6 +580,10 @@ header {
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     transition: .5s;
+    @media screen and (max-width:778px) {
+      width: 350px;
+
+    }
     &.show-cart{
       inset: 0 0 0 auto;
     }
@@ -628,6 +635,10 @@ header {
       text-align: center;
       align-items: center;
       padding-bottom: 8px;
+      @media screen and (max-width:778px) {
+        grid-template-columns: 70px 110px 55px 85px;
+        justify-content: end;
+      }
       img{
         width: 100%;
       }
@@ -1462,6 +1473,30 @@ main {
       margin: auto;
       width: 100%;
     }
+  }
+}
+// scrollBar //
+.scroll {
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    padding: 8px 11px;
+    
+    border: 2px solid $color-white;
+    border-radius: 5px;
+    background-color: $color-yellow;
+    color: $color-white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #scrollToTopBtn:hover {
+    background-color: $color-primary;
+    color: $color-white;
   }
 }
 
